@@ -1,6 +1,9 @@
 <?php 
+$path = __DIR__;
+$_gERP = explode('gERP',$path);
+$gERP = $_gERP[0]."gERP";
 session_start();
-include_once('header_footer/header.html');
+include_once($gERP.'/header_footer/header.php');
 require_once('config.php');
 require_once('forms.php');
 mysql_select_db("gndec_erp",$conn);

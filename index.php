@@ -1,5 +1,8 @@
 <?php
-include_once('header_footer/header_login.html');
+$path = __DIR__;
+$_gERP = explode('gERP',$path);
+$gERP = $_gERP[0]."gERP";
+include_once($gERP.'/header_footer/header_login.php');
 require_once('config.php');
 require_once('functions.php');
 session_start();
