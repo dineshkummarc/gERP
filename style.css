@@ -1,0 +1,263 @@
+body#application
+{
+background-image:url('images/bg6.jpg');
+}
+
+body#login
+{
+background-color:white;
+}
+
+#mytable{
+table-layout:fixed;
+width:100%;
+border:1px solid white;
+word-wrap:break-word;
+}
+
+#mytable th
+{
+color:#EEEDEB;
+background-color:#051d50;
+border:1px solid black;
+}
+
+#mytable td
+{
+color:#EEEDEB;
+background-color:#051d50;
+border:1px solid black;
+}
+
+#test
+{
+border:1px solid black;
+border-collapse:collapse;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+width:100%;
+}
+#test th
+{
+color:#EEEDEB;
+background-color:#051d50;
+border:1px solid white;
+}
+#test tr.alt
+{
+color: #EEEDEB;
+background-color:#7a89a5;
+}
+#test tr.white
+{
+color:#051d50;
+background-color:#EEEDEB;
+}
+#test td
+{
+color:#051d50;
+font-size:1em;
+border:1px solid #051d50;
+padding:3px 7px 2px 7px;
+}
+#view_details td
+{
+
+}
+#view_details tr.alt
+{
+color: #EEEDEB;
+background-color:#7a89a5;
+
+}
+#view_details tr.white
+{
+color: #051d50;
+}
+#view_details td.bold
+{
+font-size:1.5em;
+}
+#view_details td.simple
+{
+text-align:left;
+font-size:1.5em;
+}
+h1
+{
+color:#051d50
+}
+
+#student_details td
+{
+color:#051d50;
+font-size:1em;
+text-decoration:none;
+text-align:justify;
+}
+#student_details td.heading
+{
+font-size:1.5em;
+}
+#student_details td.dist
+{
+color:#051d50;
+font-size:1em;
+text-decoration:none;
+text-align:justify;
+}
+#student_details td.submit
+{
+text-align:right;
+}
+#student_attendence td
+{
+font-size:1em;
+color:#051d50;
+text-align:left;
+}
+#student_attendence td.heading
+{
+color:#051d50;
+font-size:1em;
+
+}
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+
+#get_report td
+{
+
+}
+
+caption
+{
+font-size:1.5em;
+color:#09296c;
+}
+p
+{
+font-size:1em;
+color:#09296c;
+}
+
+#login td
+{
+font-size:1em;
+color: #051d50;
+text-align:justify;
+}
+img
+{
+border:none;
+}
+
+h1
+{
+text-decoration:underline;
+}
+
+h2
+{
+color:#051d50;
+}
+h4
+{
+font-size:1em;
+color:#051d50;
+text-decoration:none;
+}
+li
+{
+font-size:1em;
+color:#09296c;
+}
+a
+{
+text-decoration:none;
+color:#09296c;
+}
+
+#credit li
+{
+color:black;
+}
+
+#credit th
+{
+background-color:#09296c;
+border-color:#09296c;
+color:white;
+}
+
+#credit
+{
+border-collapse:collapse;
+border-color:#09296c;
+}
+
+#credit td
+{
+background-color:#BCC8F5;
+border-color:#09296c;
+}
+
+#introduction p
+{
+color:#09296c;
+font-size:1.5em;
+}
+
+#logo_login
+{
+margin-top:0px;
+margin-left:320px;
+margin-right:0px;
+position:absolute;
+}
+
+#login_box
+{
+border:3px double #85a7ee;
+margin-top:200px;
+margin-left:800px;
+position:absolute;
+background-color:#b8c6e0;
+}
+
+#credits_link
+{
+margin-top:350px;
+position:absolute;
+margin-left:550px;
+
+}
+
+#erp_image
+{
+position:absolute;
+margin-top:150px;
+margin-left:180px;
+}
+
+#error
+{
+color:red;
+font-weight:bold;
+font-size:12px;
+}
+
+#button
+{
+color:white;
+font-size:15px;
+font-weight:bold;
+background-color:#2c4780;
+border:5px outset #07286b;
+padding:22px;
+
+}
+
+#admin_content li {
+display:block;
+background-color:red;
+padding:2px;
+}

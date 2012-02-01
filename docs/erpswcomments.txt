@@ -1,0 +1,64 @@
+admitted through PTU counselling( then no.),direct admission,EWS 											(DONE)
+
+No. of students should not exceed number of seats in each category also.
+
+seat matrix entry
+
+belongs to category and alloted category														(DONE)
+
+
+Occupation of parents																	(DONE)
+
+if distt undefined capture name																(DONE)
+
+IF NRI
+
+
+If Kashmiri migrant
+Fee Recipt No. for 1st admission checked
+
+ User admin clerk
+semester for MBA cannot be 8th
+query window
+for harbhag state is goa, distt is north goa and city is ludhiana (can we have some checks also with relevant pin code)					(DONE)
+photograph upload																	(DONE)
+teacher user
+teacher can update record
+on pages concerned work it has to perform should be mentioned												(DONE)
+include captacha																	(DONE)
+previous information and updated info should be accessible
+remarks column
+check for sql injection																	(DONE)
+how can admin now who all are the users?														(DONE)
+Is manage users a relevant name for what is intended?													(DONE)
+
+why get report in this way in teacher login
+forgot password
+can a user upload marks, or any info directly i.e. import, and use export for offline mode
+password length
+how is student user created
+reduntant user not allowed
+check availabity of user
+reports for t&p are different
+upload training record not appropriate
+secuirty																		(DONE)
+
+photo collage
+indisicpline
+character certificate
+All Print Reports support exporting Excel, PDF, Rich Text Format, MS Word, Text file formats. 
+It also support search in Print Report Previews.
+
+
+Notice board
+
+news,Sports Activities Management, Cultural Activities Management,
+
+Attendance and Red Alerts below 75% Attendance														(DONE)
+
+
+passwrod generation random
+
+dashboard/alerts
+monitoring tools Data not uploaded (Class Notes, Question Papers, Assignments, Sessional Marks) ,Monitor Attendance , Complaints without action
+

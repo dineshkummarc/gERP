@@ -1,0 +1,71 @@
+Range for IT,CSE, etc to be defined.
+Gender, batch by defualt should be shown
+Instead of course it should be Program.
+Title should be added
+
+
+Number the fields and their order is not proper
+
+Mother's and father's occupation,their office address etc. should 
+also be taken
+
+
+Dist. , Hosteler, Day scholar,Village,
+
+Mobile No.(student),parents
+E-mail parents
+Category
+Sub category
+Admission through
+Date of admission
+Sikh Minority, Non-Sikh Minority
+Rural, Urban
+CET RANK, AIEEE Rank
+in report, 5 in 10th and 12th should be there.
+Passed in 1st or 2nd div,in 10th, 10+2(option related)
+Refer http://www.aicte-india.org/downloads/scheduleeoa-regionaloff/StudentExcel.xlsx
+Upload of snap
+DOB- give three fields separetly DD, MM, YYYY
+Include validatins
+Contact number spread into two fields for std code and number
+Six weeks,Six month training done at dates , and other detials
+Participation in actitives like NCC,NSS,Computer Club, LUG, and others
+Disciplinary actions
+Character recommdendations at later stage
+Timestamp for each entry
+
+Personal details, School Details, Admission Details,
+Sessional details,Semester wise details,
+
+
+
+
+ELIGIBILITY CRITERIA
+For admission to B. Tech. courses, the candidate must have appeared in CET-2010 and also fulfill
+the following conditions:
+A. He / she has passed the 10+2 /Diploma or its equivalent examination conducted by a recognized
+Board / University / Council. 
+(i) For Engineering Courses
+Passed 10+2 examination with Physics and Mathematics as compulsory subjects along with
+any one of the following subjects:
+• Chemistry
+• Biology
+• Biotechnology
+• Computer Science.
+
+OR
+Passed their 10th or 10+2 examination with science stream and Passed diploma in any Engineering
+Trade from Punjab State Board of Technical Education & Industrial Training, Chandigarh or
+Sant Longowal Institute of Engineering and Technology, Longowal (SLIET),
+OR
+
+Any such examination from any other recognized State Board of Technical Education.
+OR
+
+Have passed two years certificate course from Sant Longowal Institute of Engineering and Technology, Longowal (SLIET) shall be eligible.
+
+
+
+
+
+ 
