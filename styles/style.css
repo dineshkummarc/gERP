@@ -1,6 +1,6 @@
 body#application
 {
-background-image:url('images/bg6.jpg');
+background-image:url('../media/images/bg6.jpg');
 }
 
 body#login

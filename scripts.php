@@ -1,8 +1,11 @@
 <?php
+$path = $_SERVER['SCRIPT_NAME'];
+$_gERP = explode('gERP',$path);
+$gERP = $_gERP[0]."gERP";
 echo "<script type='text/javascript' src='js/validate.js'></script>";
 echo "<script type='text/javascript' src='js/jquery-1.5.min.js'></script>";
 echo "<script type='text/javascript' src='js/jquery-validate/jquery.validate.js'></script>";
-echo "<link href='style.css' rel='stylesheet' type='text/css'>";
+#echo "<link href=".$gERP."'/styles/style.css' rel='stylesheet' type='text/css'>";
 echo "<link href='js/datepick/redmond.datepick.css' rel='stylesheet' type='text/css'>";
 echo "<script type='text/javascript' src='js/datepick/jquery.datepick.js'></script>";
 echo "<script>
