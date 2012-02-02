@@ -7,7 +7,7 @@ $gERP = $_gERP[0]."gERP";
 <table class="info" align="center">
 	<tr>
 		<td>
-			<form action=<?php echo $gERP."/info.php?mode=student_details"; ?> method="post">
+			<form action=<?php echo $gERP."/modules/student/student_details/info.php?mode=student_details"; ?> method="post">
 			<input type='image' src=<?php echo $gERP.'/media/images/student_details.png'; ?> />
 			</form>
 		</td>

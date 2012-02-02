@@ -4,7 +4,7 @@
 */
 require_once('config.php');
 require_once('functions.php');
-CheckForLogin();
+#CheckForLogin();
 mysql_select_db("gndec_erp",$conn);
 require_once ('input_form_class.php');
 require_once('scripts.php');
