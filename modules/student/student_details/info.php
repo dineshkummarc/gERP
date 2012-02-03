@@ -7,16 +7,7 @@ mysql_select_db("gndec_erp",$conn);
 require_once('functions.php');
 CheckForLogin();
 switch($_GET['mode']) {
-	
-	case "view_details":
-		if(isset($_POST['rollno'])) {
-			view_details($_POST['rollno']);
-		}
-		else {
-			view_details($_SESSION['rollno']);
-		}
-		break;
-		
+#Run this case if the user asked for get the student details. This will GET the mode parameter from the  url.		
 	case "student_details":
 		if(isset($_POST['Student_First_Name']) 
 		or isset($_POST['Student_Middle_Name']) 
@@ -44,6 +35,15 @@ switch($_GET['mode']) {
 			form("student_details");
 		}
 		
+		break;
+	
+	case "view_details":
+		if(isset($_POST['rollno'])) {
+			view_details($_POST['rollno']);
+		}
+		else {
+			view_details($_SESSION['rollno']);
+		}
 		break;
 	
 	case "edit_user":
