@@ -50,7 +50,7 @@ function changedist(str) {
     }
 	}
 
-	xmlhttp.open("GET","dist.php?q="+str,true);
+	xmlhttp.open("GET","ajax/dist.php?q="+str,true);
 	xmlhttp.send();
 }
 
@@ -139,7 +139,7 @@ xmlhttp.onreadystatechange=function()
 
 
 }
-xmlhttp.open("GET","add_no.php?q="+ad_no,true);
+xmlhttp.open("GET","ajax/add_no.php?q="+ad_no,true);
 xmlhttp.send();
 	
 }
