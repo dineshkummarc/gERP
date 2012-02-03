@@ -56,7 +56,8 @@ function changedist(str) {
 
 function setstate(distr)
 {
-	var str=document.getElementById('State');
+	alert(distr);
+	/*var str=document.getElementById('State');
 	
 	if (str.value=="")
   {
@@ -73,7 +74,7 @@ else
   }
 xmlhttp.open("GET","setaccesstoken.php",true);
 xmlhttp.send();
-
+*/
 }
 		
 function admission_no()

@@ -286,6 +286,7 @@ function edit_user_form($student_main,$student_detail,$student_previous_record,$
 		}
 		echo "</select></tr></td>";
 		echo "<script type='text/javascript'>setstate(\"".$student_address['District']."\")</script>";
+		#echo "<script type='text/javascript'>setstate()</script>";
 		echo "<tr><td><div id='dist_name'>District</div></td><td><div id='dist'></div></tr></td>";
 		
 		//$form->form_dropdown_field('dropdown','',$form->State,'state','State_Name','required','',$student_address['State']);

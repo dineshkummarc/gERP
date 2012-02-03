@@ -9,7 +9,8 @@ mysql_select_db("gndec_erp",$conn);
 $post = $_POST;
 if($_FILES["Image_Path"]["tmp_name"]!='') {
 $image_folder = "images/student_images/";
-$image_file = $image_folder.$_POST['Roll_No']."_".$_POST['Batch'].basename($_FILES["Image_Path"]["name"]);
+$image_file = $image_folder.$_POST['Roll_No']."_".$_POST['Batch'].
+basename($_FILES["Image_Path"]["name"]);
 $form = new student_form();
 move_uploaded_file($_FILES["Image_Path"]["tmp_name"] ,$image_file );
 }
@@ -26,7 +27,12 @@ if(isset($_POST['edit_training_record'])){
 		$sd = $_POST["sd".$i];
 		$ed = $_POST["ed".$i];
 		$stipend=$_POST["st".$i];
-		mysql_query("UPDATE student_training SET Start_Date='".$sd."',End_Date='".$ed."', Company_Name='".$company_name."',Company_Address='".$company_address."',Stipend='".$stipend."' WHERE Roll_No='".$roll."' AND Course='".$_POST['Course']."' AND Batch='".$_POST['Batch']."' AND Branch LIKE '%".$_POST['Branch']."%' AND Training_Type='".$_POST['Training_Type']."'") or die(mysql_error());
+		mysql_query("UPDATE student_training SET Start_Date='".$sd."',
+		End_Date='".$ed."', Company_Name='".$company_name."',
+		Company_Address='".$company_address."',Stipend='".$stipend."' 
+		WHERE Roll_No='".$roll."' AND Course='".$_POST['Course']."' 
+		AND Batch='".$_POST['Batch']."' AND Branch LIKE '%".$_POST['Branch']."%' 
+		AND Training_Type='".$_POST['Training_Type']."'") or die(mysql_error());
 	}
 	echo "<p>Training Record Succesfully Updated</p>";
 	break;
@@ -37,7 +43,11 @@ if(isset($_POST['edit_placement_record'])){
 		$company=$_POST["cn".$i];
 		$dop = $_POST["dop".$i];
 		$package=$_POST["pk".$i];
-		mysql_query("UPDATE student_placement SET Company_Name='".$company."',Date_Of_Placement='".$dop."',Package='".$package."' WHERE Roll_No='".$roll."' AND Course='".$_POST['Course']."' AND Batch='".$_POST['Batch']."' AND Branch LIKE '%".$_POST['Branch']."%'") or die(mysql_error());
+		mysql_query("UPDATE student_placement SET Company_Name='".$company."',
+		Date_Of_Placement='".$dop."',Package='".$package."' WHERE 
+		Roll_No='".$roll."' AND Course='".$_POST['Course']."' AND 
+		Batch='".$_POST['Batch']."' AND Branch LIKE '%".$_POST['Branch']."%'") 
+		or die(mysql_error());
 	}
 	echo "<p>Placement Record Updated Successfully</p>";
 	break;
@@ -80,11 +90,13 @@ if(isset($_POST['Edit_Internal_External'])) {
 
 if(isset($_POST['Edit_Semester_Final_Marks'])) {
 	$sql="Update student_course_record
-	SET Obtained_Marks='".$_POST['Obtained_Marks']."',Backlog='".$_POST['Backlog']."'
+	SET Obtained_Marks='".$_POST['Obtained_Marks']."',
+	Backlog='".$_POST['Backlog']."'
 	WHERE Roll_No='".$_POST['Roll_No']."'
 	AND Semester ='".$_POST['Semester']."'";
 	mysql_query($sql) or die(mysql_error());
-	echo "<p>Semester Final Marks Updated Successfully for Roll No '".$_POST['Roll_No']."'</p>";
+	echo "<p>Semester Final Marks Updated Successfully for 
+	Roll No '".$_POST['Roll_No']."'</p>";
 	break;
 }
 
