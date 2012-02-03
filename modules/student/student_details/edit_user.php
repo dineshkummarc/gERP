@@ -1,7 +1,7 @@
 <?
 
 include_once('../../../config.php');
-include_once('../../../header_footer/header.html');
+include_once('../../../header_footer/header.php');
 include_once('functions.php');
 session_start();
 CheckForLogin();
