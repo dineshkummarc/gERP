@@ -1,12 +1,11 @@
 <?php
-
-echo "<script type='text/javascript' src='js/validate.js'></script>";
-echo "<script type='text/javascript' src='js/jquery-1.5.min.js'></script>";
-echo "<script type='text/javascript' src='js/jquery-validate/jquery.validate.js'></script>";
-#echo "<link href=".$gERP."'/styles/style.css' rel='stylesheet' type='text/css'>";
-echo "<link href='../../../js/datepick/redmond.datepick.css' rel='stylesheet' type='text/css'>";
-echo "<script type='text/javascript' src='js/datepick/jquery.datepick.js'></script>";
-echo "<script>
+?>
+<script type='text/javascript' src='js/validate.js'></script>
+<script type='text/javascript' src='js/jquery-1.5.min.js'></script>
+<script type='text/javascript' src='js/jquery-validate/jquery.validate.js'></script>
+<link href='../../../js/datepick/redmond.datepick.css' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='js/datepick/jquery.datepick.js'></script>
+<script>
   $(document).ready(function(){
     $('#teacher_attendence').validate({
    messages: {
@@ -21,5 +20,4 @@ echo "<script>
     $('#dop').datepick({dateFormat:'yyyy-mm-dd'});
     $('#dob').datepick({dateFormat:'yyyy-mm-dd', yearRange: '1956:2080'});
   });
-  </script>";
-?>
+ </script>
