@@ -1,7 +1,7 @@
 <?php
 /* This is the Main File which Contains all the functions	*
  *This is where the main processing of the program happens	*/
-require_once('../../../config.php');
+include_once('../../../includes/paths.inc');
 require('../../../PHPMailer/class.phpmailer.php');
 mysql_select_db("gndec_erp",$conn);
 require_once ('../../../input_form_class.php');
@@ -157,7 +157,7 @@ function view_details($rollno){
 	else {
 		$image_path_f = $image_path[0];
 	}
-	echo "<table align='center'><tr><td><img id='profile' style='border:2px solid #7a89a5' src=".$image_path_f." height='200' width='200' /></td></tr></table>";
+	echo "<table align='center'><tr><td><img id='profile' style='border:2px solid #7a89a5' src='".$image_path_f."' height='200' width='200' /></td></tr></table>";
 	$sql = "SELECT * 
 			FROM student_main,student_detail,student_address 
 			WHERE student_main.Roll_No=student_detail.Roll_No 

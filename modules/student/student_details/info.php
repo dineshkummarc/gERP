@@ -1,7 +1,8 @@
 <?php 
 session_start();
-include_once('../../../header_footer/header.php');
-require_once('../../../config.php');
+include_once('../../../includes/paths.inc');
+include_once($header_footer_folder.'header.php');
+require_once($includes_folder.'config.inc');
 require_once('forms.php');
 mysql_select_db("gndec_erp",$conn);
 require_once('functions.php');
@@ -78,6 +79,6 @@ switch($_GET['mode']) {
 		break;
 	}
 	
-	include_once('../../../header_footer/footer.php');
+	include_once($header_footer_folder.'footer.php');
 
 ?>
