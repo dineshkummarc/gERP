@@ -40,4 +40,8 @@ $header_footer_dir = $main_dir.'header_footer/';
 
 //Get the url of the header and footer directory
 $header_footer_url = $main_url.'header_footer/';
+
+$js_dir = $main_dir.'js/';
+
+$js_url = $main_url.'js/';
 ?>

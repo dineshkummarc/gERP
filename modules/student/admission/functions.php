@@ -2,7 +2,7 @@
 /* This is the Main File which Contains all the functions	*
  *This is where the main processing of the program happens	*/
 
-include_once('../../../includes/paths.php');
+include_once('paths.php');
 
 require($main_dir.'PHPMailer/class.phpmailer.php');
 
@@ -10,7 +10,7 @@ mysql_select_db("gndec_erp",$conn);
 
 require_once ($main_dir.'input_form_class.php');
 
-require_once('includes.php');
+require_once($includes_dir.'includes.php');
 
 function CheckForLogin() {
 	if(!isset($_SESSION['usertype'])) {

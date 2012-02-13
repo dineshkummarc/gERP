@@ -1,11 +1,11 @@
 <?
-include_once('header_footer/header.html');
+include_once('header_footer/header.php');
 require_once('functions.php');
 session_start();
 CheckForLogin();
 include "config.php";
 include "input_form_class.php";
-$image_folder = "images/student_images/";
+$image_folder = "/media/images/student_images/";
 $image_file = $image_folder.$_POST['Roll_No']."_".$_POST['Batch'].basename($_FILES["Image_Path"]["name"]);
 $form = new student_form();
 move_uploaded_file($_FILES["Image_Path"]["tmp_name"] ,$image_file );

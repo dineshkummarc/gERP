@@ -2,17 +2,17 @@
 
 session_start();
 
-include_once('../../../includes/paths.php');
+include('paths.php');
 
-include_once($header_footer_dir.'header.php');
+include($header_footer_dir.'header.php');
 
-require_once($includes_dir.'config.inc');
+require($includes_dir.'config.inc');
 
-require_once('forms.php');
+require('forms.php');
 
 mysql_select_db("gndec_erp",$conn);
 
-require_once('functions.php');
+require('functions.php');
 
 CheckForLogin();
 
@@ -27,6 +27,6 @@ switch($_GET['mode']) {
 		break;
 	}
 	
-	include_once($header_footer_dir.'footer.php');
+	include($header_footer_dir.'footer.php');
 
 ?>

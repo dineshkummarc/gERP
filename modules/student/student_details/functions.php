@@ -2,15 +2,15 @@
 /* This is the Main File which Contains all the functions	*
  *This is where the main processing of the program happens	*/
 
-include_once('../../../includes/paths.php');
+require('paths.php');
 
 require($main_dir.'PHPMailer/class.phpmailer.php');
 
 mysql_select_db("gndec_erp",$conn);
 
-require_once ($main_dir.'input_form_class.php');
+require($main_dir.'input_form_class.php');
 
-require_once('includes.php');
+require('includes.php');
 
 function CheckForLogin() {
 	if(!isset($_SESSION['usertype'])) {
@@ -119,7 +119,7 @@ function student_details($query_data,$tablename) {
 		if($j==$tests){
 			while($row_i = mysql_fetch_array($img)) {
 				if($row_i[0]=='') {
-					$img_path = 'images/student_images/pna.png';
+					$img_path = $media_url.'images/student_images/pna.png';
 				}
 				else {
 					$img_path = $row_i[0];
@@ -155,14 +155,15 @@ function student_details($query_data,$tablename) {
 	
 /*This function displays the student details in the Tabular Form*/
 function view_details($rollno){
+  require('paths.php');
 	$table_columns = get_tables_cols();
 	$image_result = mysql_query("SELECT Image_Path FROM student_images WHERE Roll_No='".$rollno."'") or die(mysql_error());
 	$image_path = mysql_fetch_array($image_result);
 	if($image_path=='') {
-		$image_path_f = 'images/student_images/pna.png';
+		$image_path_f = $media_url.'images/student_images/pna.png';
 	}
 	else {
-		$image_path_f = $image_path[0];
+		$image_path_f = $media_url.'images/student_images/'.$image_path[0];
 	}
 	echo "<table align='center'><tr><td><img id='profile' style='border:2px solid #7a89a5' src='".$image_path_f."' height='200' width='200' /></td></tr></table>";
 	$sql = "SELECT * 

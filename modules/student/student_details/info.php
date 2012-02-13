@@ -2,7 +2,7 @@
 
 session_start();
 
-include_once('../../../includes/paths.php');
+require('paths.php');
 
 include_once($header_footer_dir.'header.php');
 

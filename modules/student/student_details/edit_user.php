@@ -1,6 +1,6 @@
 <?php
 
-include_once('../../../includes/paths.php');
+include_once('paths.php');
 
 include_once($includes_dir.'includes.inc');
 
@@ -24,6 +24,7 @@ $image_file = $image_dir.$_POST['Roll_No']."_".$_POST['Batch'].
 
 basename($_FILES["Image_Path"]["name"]);
 
+$image_file_f = $_POST['Roll_No']."_".$_POST['Batch'].basename($_FILES["Image_Path"]["name"]);
 $form = new student_form();
 
 move_uploaded_file($_FILES["Image_Path"]["tmp_name"] ,$image_file );
@@ -250,7 +251,7 @@ else
 			mysql_query($sql5) or die(mysql_error());
 			
 			$sql6 = "UPDATE student_images SET
-			Image_Path = '".$image_file."'
+			Image_Path = '".$image_file_f."'
 			WHERE Roll_No = '".$post['Roll_No']."'";
 			mysql_query($sql6) or die(mysql_error());
 	echo "<p>Record Updated For Roll No ".$post['Roll_No']."</p>";

@@ -2,11 +2,12 @@
 /* This is the Main File which Contains all the forms
   This Function is used to display the various Form based on the type of form given
 */
-require_once('../../../config.php');
+require_once('paths.php');
+require_once($includes_dir.'config.inc');
 require_once('functions.php');
 CheckForLogin();
 mysql_select_db("gndec_erp",$conn);
-require_once ('../../../input_form_class.php');
+require_once ($main_dir.'input_form_class.php');
 function form($formtype,$additional_detail) 
 {
 	$table_columns = get_tables_cols();
