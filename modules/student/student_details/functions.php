@@ -1,17 +1,24 @@
 <?php
 /* This is the Main File which Contains all the functions	*
  *This is where the main processing of the program happens	*/
-include_once('../../../includes/paths.inc');
-require('../../../PHPMailer/class.phpmailer.php');
+
+include_once('../../../includes/paths.php');
+
+require($main_dir.'PHPMailer/class.phpmailer.php');
+
 mysql_select_db("gndec_erp",$conn);
-require_once ('../../../input_form_class.php');
+
+require_once ($main_dir.'input_form_class.php');
+
 require_once('includes.php');
+
 function CheckForLogin() {
 	if(!isset($_SESSION['usertype'])) {
 		session_destroy();
 		header("location:index.php");
 	}	
 }
+
 /* This Function is Used To fetch the names of tables and Columns from the database*/
 function get_tables_cols() {
 	$query_tables = mysql_list_tables("gndec_erp");

@@ -1,8 +1,6 @@
 <?php
-$path = getcwd();
-$_gERP = explode('gERP',$path);
-$gERP = $_gERP[0]."/gERP";
-include_once($gERP.'/header_footer/header.php');
+include_once('../../includes/paths.php');
+include_once($header_footer_dir.'header.php');
 ?>
 <table align='center'>
 <tr><td>
@@ -46,5 +44,5 @@ include_once($gERP.'/header_footer/header.php');
 <h4>Step 1: In the first step admin need to specify his/her current password along with the new password he/she wish to set. Admin must provide correct current password in order to set the new password.<h4>
 <h4>Step 2: In  the second step after providing correct information, Admin will be automatically Logged out of the program and he/she need to re-login with his/her new changed password.</h4></p>
 <?php
-include_once('header_footer/footer.php');
+include_once($header_footer_dir.'footer.php');
 ?>

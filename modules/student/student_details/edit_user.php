@@ -1,19 +1,34 @@
-<?
-include_once('../../../includes/paths.inc');
-include_once($includes_folder.'includes.inc');
-include_once($header_footer_folder.'header.php');
+<?php
+
+include_once('../../../includes/paths.php');
+
+include_once($includes_dir.'includes.inc');
+
+include_once($header_footer_dir.'header.php');
+
 include_once('functions.php');
+
 session_start();
+
 CheckForLogin();
+
 mysql_select_db("gndec_erp",$conn);
+
 $post = $_POST;
+
 if($_FILES["Image_Path"]["tmp_name"]!='') {
-$image_folder = $media_path.'images/';
-$image_file = $image_folder.$_POST['Roll_No']."_".$_POST['Batch'].
+
+$image_folder = $media_url.'images/';
+
+$image_file = $image_dir.$_POST['Roll_No']."_".$_POST['Batch'].
+
 basename($_FILES["Image_Path"]["name"]);
+
 $form = new student_form();
+
 move_uploaded_file($_FILES["Image_Path"]["tmp_name"] ,$image_file );
 }
+
 else {
 	$image_file = $_POST['Default_Image_Path'];
 }

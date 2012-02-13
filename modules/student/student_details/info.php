@@ -1,12 +1,21 @@
 <?php 
+
 session_start();
-include_once('../../../includes/paths.inc');
-include_once($header_footer_folder.'header.php');
-require_once($includes_folder.'config.inc');
+
+include_once('../../../includes/paths.php');
+
+include_once($header_footer_dir.'header.php');
+
+require_once($includes_dir.'config.inc');
+
 require_once('forms.php');
+
 mysql_select_db("gndec_erp",$conn);
+
 require_once('functions.php');
+
 CheckForLogin();
+
 switch($_GET['mode']) {
 #Run this case if the user asked for get the student details. This will GET the mode parameter from the  url.		
 	case "student_details":
@@ -79,6 +88,6 @@ switch($_GET['mode']) {
 		break;
 	}
 	
-	include_once($header_footer_folder.'footer.php');
+	include_once($header_footer_dir.'footer.php');
 
 ?>
