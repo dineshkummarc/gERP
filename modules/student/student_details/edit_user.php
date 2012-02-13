@@ -29,7 +29,7 @@ move_uploaded_file($_FILES["Image_Path"]["tmp_name"] ,$image_file );
 }
 
 else {
-	$image_file = $_POST['Default_Image_Path'];
+	$image_file_f = $_POST['Default_Image_Path'];
 }
 
 
