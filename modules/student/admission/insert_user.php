@@ -12,7 +12,7 @@ CheckForLogin();
 
 include_once($includes_dir.'config.inc');
 
-include_once($main_dir.'input_form_class.php');
+include_once($main_dir.'lib/input_form_class.php');
 
 $image_folder = $media_dir."images/student_images/";
 

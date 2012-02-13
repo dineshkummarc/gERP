@@ -4,11 +4,11 @@
 
 include_once('paths.php');
 
-require($main_dir.'PHPMailer/class.phpmailer.php');
+require($main_dir.'lib/PHPMailer/class.phpmailer.php');
 
 mysql_select_db("gndec_erp",$conn);
 
-require_once ($main_dir.'input_form_class.php');
+require_once ($main_dir.'lib/input_form_class.php');
 
 require_once($includes_dir.'includes.php');
 

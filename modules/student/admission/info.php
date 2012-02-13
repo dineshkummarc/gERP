@@ -6,10 +6,6 @@ include('paths.php');
 
 include($header_footer_dir.'header.php');
 
-require($includes_dir.'config.inc');
-
-require('forms.php');
-
 mysql_select_db("gndec_erp",$conn);
 
 require('functions.php');

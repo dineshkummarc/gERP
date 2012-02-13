@@ -125,6 +125,7 @@ function student_details($query_data,$tablename) {
 				else {
 					$img_path = $media_url.'images/student_images/'.$row_i[0];
 				}
+				echo $media_url;
 					echo "<td><img src='".$img_path."' height='70' width='70' /></td>";
 				}
 			echo "<td><form action='info.php?mode=view_details' method='post' target='_blank'>
