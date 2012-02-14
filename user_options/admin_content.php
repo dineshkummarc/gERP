@@ -15,7 +15,7 @@ include_once('../includes/paths.php');
 			</form>
 		</td>
 		<td>	
-			<form action=<?php echo $main_url."info.php?mode=add_other"; ?> method="post">
+			<form action=<?php echo $main_url."modules/employee/addEmployee/info.php?mode=add_other"; ?> method="post">
 			<input type='hidden' name='usertype' value='Admin' />
 			<input type='image' src=<?php echo $media_url.'images/add_other.png'; ?> />
 			</form>
