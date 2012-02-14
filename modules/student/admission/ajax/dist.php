@@ -2,7 +2,8 @@
 
 $q = $_GET[q];
 $d = $_GET[d];
-require_once('../../../config.php');
+require_once('../paths.php');
+require_once($includes_dir.'config.inc');
 mysql_select_db("gndec_erp",$conn);
 $sql = "SELECT District_Name FROM district WHERE State_Name='".$q."' ORDER BY District_Name ASC";
 $result = mysql_query($sql);

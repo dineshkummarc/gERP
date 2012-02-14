@@ -2,10 +2,10 @@
 include_once('paths.php');
 ?>
 <script type='text/javascript' src=<?php echo $main_url.'lib/js/validate.js'; ?> ></script>
-<script type='text/javascript' src=<?php echo $main_url.'lib/jsjquery-1.5.min.js'; ?> ></script>
-<script type='text/javascript' src=<?php echo $main_url.'lib/jsjquery-validate/jquery.validate.js'; ?> ></script>
-<link href=<?php echo $main_url.'lib/jsdatepick/redmond.datepick.css'; ?> rel='stylesheet' type='text/css'>
-<script type='text/javascript' src=<?php echo $main_url.'lib/jsdatepick/jquery.datepick.js'; ?> ></script>
+<script type='text/javascript' src=<?php echo $main_url.'lib/js/jquery-1.5.min.js'; ?> ></script>
+<script type='text/javascript' src=<?php echo $main_url.'lib/js/jquery-validate/jquery.validate.js'; ?> ></script>
+<link href=<?php echo $main_url.'lib/js/datepick/redmond.datepick.css'; ?> rel='stylesheet' type='text/css'>
+<script type='text/javascript' src=<?php echo $main_url.'lib/js/datepick/jquery.datepick.js'; ?> ></script>
 <script>
   $(document).ready(function(){
     $('#teacher_attendence').validate({
